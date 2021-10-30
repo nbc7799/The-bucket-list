@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Gugi", cursive;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: repeat url(imgs/back.png);
+  background-size: 100%;
+  /* overflow-y: hidden; */
+}
+/* background에 이미지 삽입할때는 반복설정해줘야함 */
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+/* Header Part */
+header {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  position: absolute;
+  z-index: 101;
+  width: 80%;
+  height: 10px;
+}
+
+.star {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  transition: all 400ms ease-in-out;
+}
+
+.star:hover {
+  transform: rotate(450deg) scale(1.2);
+  cursor: pointer;
+}
+
+.star1 {
+  position: absolute;
+  top: 4rem;
+  right: 26rem;
+  display: flex;
+  justify-content: end;
+}
+
+.star2 {
+  position: absolute;
+  top: 60%;
+  left: 4%;
+}
+
+.star3 {
+  position: absolute;
+  top: 150%;
+  right: 10rem;
+  display: flex;
+  justify-content: end;
+}
+
+.star4 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.star5 {
+  position: absolute;
+  top: 40rem;
+  left: 10rem;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 8rem;
+  z-index: 20;
+  margin-top: 6%;
+}
+
+.name__line {
+  position: absolute;
+  z-index: 20;
+  width: 68%;
+}
+
+.name__input {
+  font-family: "Gugi", cursive;
+  position: absolute;
+  z-index: 30;
+  left: 38%;
+  width: 26%;
+  height: 30%;
+  color: white;
+  font-size: 4rem;
+}
+
+.nameTag {
+  font-family: "Gugi", cursive;
+  position: absolute;
+  z-index: 30;
+  left: 38%;
+  width: 26%;
+  height: 30%;
+  color: white;
+  font-size: 4rem;
+}
+
+/* Footer part */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50rem;
+}
+
+/* container*/
+
+.screen {
+  position: absolute;
+  z-index: 1;
+  top: 13rem;
+  right: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50rem;
+  align-items: center;
+}
+
+.screen__img {
+  width: 140rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.items {
+  position: relative;
+  z-index: 2;
+  list-style: none;
+  width: 80rem;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  margin-left: 8%;
+  margin-top: 6%;
+  padding: 0;
+}
+
+.item-row {
+  width: 50%;
+  height: 4rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 1.8rem;
+  margin: auto;
+}
+
+.item__checkBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.item__checkBtn img {
+  width: 3rem;
+  height: 3rem;
+  transition: all 300ms ease-in-out;
+}
+
+.item__checkBtn img:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
+.item__name {
+  color: #e6c5ff;
+  width: 100%;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+}
+
+.item__delBtn {
+  display: flex;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+/* Input 입력창 */
+.text {
+  position: relative;
+  z-index: 29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 8rem;
+  padding: 4px 30px;
+  margin-left: 7%;
+  margin-top: 4rem;
+}
+
+.text__input {
+  position: absolute;
+  z-index: 35;
+  color: white;
+  width: 80%;
+  font-size: 2em;
+  padding: 4px 20px;
+}
+
+.text__img {
+  position: absolute;
+  z-index: 30;
+  width: 100%;
+}
+/* Moon 시작 */
+
+.moon {
+  position: absolute;
+  z-index: 0;
+  top: 1rem;
+}
+
+.moon__img {
+  width: 100%;
+  position: relative;
+  top: 30%;
+  transition: transform 14s linear;
+}
+
+.moon__img:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 23%;
+  }
+}
+
+@media screen and (min-width: 340px) and (max-width: 649px) {
+  html {
+    font-size: 16%;
+  }
+
+  .name {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 18rem;
+    z-index: 20;
+    margin-top: 15%;
+  }
+
+  .name__input {
+    font-family: "Gugi", cursive;
+    position: absolute;
+    z-index: 30;
+    left: 36%;
+    width: 30%;
+    height: 30%;
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 8rem;
+  }
+
+  .screen {
+    position: absolute;
+    z-index: 1;
+    top: 40rem;
+    right: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50rem;
+    align-items: center;
+  }
+
+  .screen__img {
+    width: 135rem;
+    height: 70rem;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .item__name {
+    font-size: 1.3rem;
+    line-height: 5rem;
+  }
+
+  .item-row {
+    width: 50%;
+    height: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 7rem;
+  }
+
+  .items {
+    height: 40rem;
+    /* overflow-y: hidden; */
+  }
+
+  .moon__img {
+    width: 160rem;
+  }
+}
