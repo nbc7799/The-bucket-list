@@ -51,11 +51,6 @@ function createItem(list) {
     const item = document.createElement('div')
     item.setAttribute('class', 'item')
 
-    const itemBtn = document.createElement('button')
-    itemBtn.setAttribute('class', 'item__checkBtn')
-    itemBtn.setAttribute('type', 'button')
-
-
     const itemName = document.createElement('span')
     itemName.setAttribute('class', 'item__name')
     itemName.textContent = list
@@ -67,7 +62,7 @@ function createItem(list) {
         items.removeChild(itemRow)
     })
 
-    item.appendChild(itemBtn);
+
     item.appendChild(itemName);
     item.appendChild(itemDelBtn);
     itemRow.appendChild(item)

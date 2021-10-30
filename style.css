@@ -165,7 +165,7 @@ footer {
   position: relative;
   z-index: 2;
   list-style: none;
-  width: 80rem;
+  width: 75rem;
   height: 20rem;
   display: flex;
   justify-content: space-between;
@@ -199,12 +199,14 @@ footer {
   width: 3rem;
   height: 3rem;
   cursor: pointer;
+  color: white;
 }
 
-.item__checkBtn img {
-  width: 3rem;
-  height: 3rem;
-  transition: all 300ms ease-in-out;
+.image {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 500;
 }
 
 .item__checkBtn img:hover {
@@ -327,8 +329,8 @@ footer {
   }
 
   .screen__img {
-    width: 135rem;
-    height: 70rem;
+    width: 150rem;
+    height: 80rem;
     position: absolute;
     z-index: 1;
   }
