@@ -293,7 +293,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 340px) and (max-width: 649px) {
+@media screen and (min-width: 320px) and (max-width: 649px) {
   html {
     font-size: 16%;
   }
@@ -323,17 +323,12 @@ footer {
     position: absolute;
     z-index: 1;
     top: 10rem;
-    right: 3.8rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     height: 50rem;
-    align-items: center;
   }
 
   .screen__img {
-    width: 150rem;
-    height: 80rem;
+    width: 100rem;
+    height: 50rem;
     position: absolute;
     z-index: 1;
   }
@@ -356,6 +351,6 @@ footer {
   }
 
   .moon__img {
-    width: 160rem;
+    width: 100rem;
   }
 }
