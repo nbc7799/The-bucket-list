@@ -293,7 +293,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 649px) {
+@media screen and (min-width: 300px) and (max-width: 649px) {
   html {
     font-size: 16%;
   }
